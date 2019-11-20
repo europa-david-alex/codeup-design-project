@@ -1,0 +1,13 @@
+/*font-family: 'Abel', sans-serif;*/
+/*font-family: 'Anton', sans-serif;*/
+body {
+	background-color: #e6e6e6;
+}
+#main-header {
+	font-family: 'Abel', sans-serif;
+}
+#heading-nav a{
+	font-family: 'Abel', sans-serif;
+	color: black;
+
+}

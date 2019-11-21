@@ -21,7 +21,7 @@ text-align: center;
 	height: 105px;
 	border: 7px solid white;
 	border-radius: 50%;
-	/*padding: 10% 0;*/
+	padding: 50% 0;
 	font-family: 'anton', sans-serif;
 }
 #design-button{
@@ -43,10 +43,28 @@ text-align: center;
 p {
 	font-family: 'Abel', sans-serif;
 }
+
+
 #tiny-circles h6 {
 	width: 18px;
 	height: 18px;
 	font-size: 50%;
 	border-radius: 50%;
 	font-family: 'anton', sans-serif;
+	padding: 5px;
+}
+#main-logo {
+	border-radius: 50%;
+	position: relative;
+	bottom: 25px;
+	height: 105px;
+	width: 105px;
+	display: block;
+	margin: 25px auto;
+}
+.logo-container {
+	background-color: white;
+	height: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }

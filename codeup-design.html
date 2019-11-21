@@ -14,25 +14,34 @@
 	<title>Codeup Design</title>
 </head>
 <body>
+<!--NAVBAR-->
+<!--<nav class="navbar navbar-light bg-light my-5">-->
+<!--	<span class="navbar-brand mb-0 h1">a</span>-->
+<!--</nav>-->
+<div class="logo-container">
+<img id="main-logo" src="assets/logo.jpg" alt="">
+</div>
 <!--MAIN CONTAINER-->
 <div class="container text-center">
 <!--	COMPANY LOGO-->
 	<h1 id="company-logo">codeup design</h1>
-<!--NAVBAR-->
-	<ul class="nav row" id="heading-nav">
-		<li class="col nav-item">
-			<a class=" nav-link" href="#">SERVICES</a>
-		</li>
-		<li class="col nav-item">
-			<a class="nav-link" href="#">WORK</a>
-		</li>
-		<li class="col nav-item">
-			<a class="nav-link" href="#">BLOG</a>
-		</li>
-		<li class="col nav-item">
-			<a class="nav-link" href="#">CONTACT</a>
-		</li>
-	</ul>
+<!--NAVS-->
+	<div class="row">
+		<ul class="nav" id="heading-nav">
+			<li class="nav-item">
+				<a class=" nav-link" href="#">SERVICES</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">WORK</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">BLOG</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">CONTACT</a>
+			</li>
+		</ul>
+	</div>
 </div>
 <!--MAIN HEADER-->
 <div class="m-4" id="main-header">
@@ -43,21 +52,29 @@
 
 <!--circles/pills-->
 <div class="container text-center" id="circles-main">
-	<div class="first-two-circles offset-1 col-4 float-left">
-		<h5	id="design-button">DESIGN</h5>
-		<h5 id="develop-button">DEVELOP</h5>
+	<div class="row">
+		<div class="first-two-circles offset-1 col-4 float-left">
+			<h5	id="design-button">DESIGN</h5>
+			<h5 id="develop-button">DEVELOP</h5>
+		</div>
+		<div class="second-two-circles offset-1 col-4 float-left">
+			<h5	id="support-button">SUPPORT</h5>
+			<h5	id="host-button">HOST</h5>
+		</div>
 	</div>
-	<div class="second-two-circles offset-1 col-4 float-left">
-		<h5	id="support-button">SUPPORT</h5>
-		<h5	id="host-button">HOST</h5>
-	</div>
+</div>
+
 <!--	CONTENT AREA-->
-<p class="col-12 text-center" id="selected-work">SELECTED WORK</p>
-<!--PROJECTS-->
+<div class="container mt-5">
+	<p class="text-center" id="selected-work">
+		SELECTED WORK
+	</p>
+	<!--PROJECTS-->
 	<div class="project-image">
 		<img class="col-12 p-2 rounded" id="ipad-img" src="assets/images/apple-ipad.jpg" alt="">
 	</div>
 </div>
+
 <!--IMAGE DESCRIPTION-->
 <div class="container" >
 	<div class="row">
@@ -65,7 +82,7 @@
 			<p>FEATURED PROJECT</p>
 		</div>
 
-		<div class="col-6 text-center" id="tiny-circles">
+		<div class="col-6 text-center mt-1" id="tiny-circles">
 			<div class="row">
 				<div class="col-1 offset-1">
 					<h6	id="design-button">D</h6>
@@ -91,6 +108,7 @@
 	<!--LOWER CIRCLES-->
 	</div>
 </div>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

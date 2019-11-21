@@ -13,7 +13,7 @@ body {
 }
 #main-header{
 	font-family: 'anton', sans-serif;
-	text-align: center;
+text-align: center;
 }
 #circles-main h5 {
 	color: white;
@@ -36,9 +36,17 @@ body {
 #host-button{
 	background-color: #00ABA9;
 }
-#selected-work {
-	font-family: 'Abel', sans-serif;
-}
+
 #ipad-img {
 	background-color: #e6e6e6;
+}
+p {
+	font-family: 'Abel', sans-serif;
+}
+#tiny-circles h6 {
+	width: 18px;
+	height: 18px;
+	font-size: 50%;
+	border-radius: 50%;
+	font-family: 'anton', sans-serif;
 }

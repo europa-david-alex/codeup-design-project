@@ -53,10 +53,19 @@ p {
 	font-family: 'anton', sans-serif;
 	padding: 5px;
 }
-#main-logo {
+#main-logo-sm {
 	border-radius: 50%;
 	position: relative;
 	bottom: 25px;
+	height: 105px;
+	width: 105px;
+	display: block;
+	margin: 25px auto;
+}
+#main-logo-md {
+	border-radius: 50%;
+	position: relative;
+	bottom: 90px;
 	height: 105px;
 	width: 105px;
 	display: block;
@@ -68,3 +77,4 @@ p {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+

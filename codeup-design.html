@@ -19,15 +19,33 @@
 <!--	<span class="navbar-brand mb-0 h1">a</span>-->
 <!--</nav>-->
 <div class="logo-container">
-<img id="main-logo" src="assets/logo.jpg" alt="">
+	<div class=" d-none d-sm-block">
+		<ul class="nav row text-center mx-auto" id="heading-nav">
+				<li class="nav-item col-2 offset-1">
+					<a class=" nav-link" href="#">SERVICES</a>
+				</li>
+				<li class="nav-item col-2">
+					<a class="nav-link" href="#">WORK</a>
+				</li>
+
+				<li class="nav-item col-2 offset-2">
+					<a class="nav-link" href="#">BLOG</a>
+				</li>
+				<li class="nav-item col-2">
+					<a class="nav-link" href="#">CONTACT</a>
+				</li>
+		</ul>
+	</div>
+<img class="d-block d-sm-none" id="main-logo-sm" src="assets/logo.jpg" alt="">
+	<img class="d-none d-sm-block" id="main-logo-md" src="assets/logo.jpg" alt="">
 </div>
 <!--MAIN CONTAINER-->
-<div class="container text-center">
+<div class="container text-center mx-auto d-block d-sm-none">
 <!--	COMPANY LOGO-->
 	<h1 id="company-logo">codeup design</h1>
 <!--NAVS-->
 	<div class="row">
-		<ul class="nav" id="heading-nav">
+		<ul class="nav text-center mx-auto " id="heading-nav">
 			<li class="nav-item">
 				<a class=" nav-link" href="#">SERVICES</a>
 			</li>
@@ -45,7 +63,7 @@
 </div>
 <!--MAIN HEADER-->
 <div class="m-4" id="main-header">
-	<h2 id="primary-header">VISUAL DESIGN &<br> WEB DEVELOPMENT</h2>
+	<h2 id="primary-header">VISUAL DESIGN &<br class="d-block d-sm-none"> WEB DEVELOPMENT</h2>
 
 	<h5 class="m-4" id="secondary-header">FROM PARK CITY, UTAH</h5>
 </div>

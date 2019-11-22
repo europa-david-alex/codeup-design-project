@@ -14,9 +14,9 @@
 	<title>Codeup Design</title>
 </head>
 <body>
-<!--NAVS FOR MD+ VIEWS-->
+<!--NAVS FOR MD VIEW-->
 <div class="logo-container">
-	<div class=" d-none d-sm-block">
+	<div class="d-none d-sm-block d-lg-none d-xl-none">
 		<ul class="nav row text-center mx-auto" id="heading-nav">
 				<li class="nav-item col-2 offset-1">
 					<a class=" nav-link" href="#">SERVICES</a>
@@ -33,17 +33,42 @@
 				</li>
 		</ul>
 	</div>
-	<!--END NAVS FOR MD+ VIEWS-->
+	<!--END NAVS FOR MD VIEW-->
+<!--	NAVS FOR LG+ VIEWS-->
+	<div class="d-none d-lg-block d-xl-block">
+
+		<ul class="nav row text-center" id="heading-nav">
+			<li class="nav-item col-3 offset-2">
+				<!--LG CODEUP DESIGN TEXT-->
+				<h1 class="text-center mx-auto d-none d-lg-block d-xl-block" id="company-logo">codeup design</h1>
+			</li>
+			<li class="nav-item col-1 offset-2">
+				<a class=" nav-link" href="#">SERVICES</a>
+			</li>
+			<li class="nav-item col-1">
+				<a class="nav-link" href="#">WORK</a>
+			</li>
+
+			<li class="nav-item col-1">
+				<a class="nav-link" href="#">BLOG</a>
+			</li>
+			<li class="nav-item col-1">
+				<a class="nav-link" href="#">CONTACT</a>
+			</li>
+		</ul>
+	</div>
 <!--LOGO FOR SM VIEW-->
 	<img class="d-block d-sm-none" id="main-logo-sm" src="assets/logo.jpg" alt="">
-<!--	END LOGO FOR SMALL VIEW-->
 <!--	LOGO FOR MD VIEW-->
-	<img class="d-none d-sm-block" id="main-logo-md" src="assets/logo.jpg" alt="">
-<!--	END LOGO FOR MD VIEW-->
+	<img class="d-none d-sm-block d-lg-none d-xl-none" id="main-logo-md" src="assets/logo.jpg" alt="">
+<!--	LOGO FOR LG VIEW-->
+	<img class="d-none d-lg-block d-xl-block mb-5" id="main-logo-lg" src="assets/logo.jpg" alt="">
+
 </div>
 <!--END CONTAINER FOR LOGO-->
-<!--MD+ CODEUP DESIGN TEXT-->
-<h1 class="text-center mx-auto d-none d-sm-block" id="company-logo">codeup design</h1>
+
+<!--MD CODEUP DESIGN TEXT-->
+<h1 class="text-center mx-auto d-none d-sm-block d-lg-none d-xl-none" id="company-logo">codeup design</h1>
 <!--NAV CONTAINER FOR SMALL VIEW-->
 <div class="container text-center mx-auto d-block d-sm-none">
 <!--	SMALL CODEUP DESIGN TEXT-->
@@ -82,26 +107,25 @@
 <!--			<h5 id="support-button"><br>SUPPORT</h5>-->
 <!--		</div>-->
 <!--		<div class="second-two-circles offset-1 col-4">-->
-git st
 <!--			<h5 id="develop-button"><br>DEVELOP</h5>-->
 <!--			<h5	id="host-button"><br>HOST</h5>-->
 <!--		</div>-->
 <!--	</div>-->
 <!--</div>-->
 
-<!--CIRCLES SHOW ONLY ON MEDIUM-->
+<!--CIRCLES FOR SMALL/MEDIUM-->
 <div class="container text-center d-block d-sm-block" id="circles-main">
-	<div class="row">
-		<div class="mx-auto " id="medium-circles">
+<!--	<div class="row">-->
+		<div class="mx-auto" id="medium-circles">
 			<h5 id="design-button"><br>DESIGN</h5>
 			<h5 id="develop-button"><br>DEVELOP</h5>
 <!--		</div>-->
 <!--		<div class="second-two-circles offset-1 col-4">-->
 
-			<h5	id="support-button"><br>SUPPORT</h5>
+			<h5 id="support-button"><br>SUPPORT</h5>
 			<h5	id="host-button"><br>HOST</h5>
+<!--		</div>-->
 		</div>
-	</div>
 </div>
 <!--circles/pillsTEST-->
 <!--<div class="container text-center">-->
@@ -119,13 +143,22 @@ git st
 	<hr class="mx-5 d-none d-sm-block">
 <!--	HIDDEN ON SMALL SCREENS-->
 </div>
-<!--IMAGE CONTENT AREA START-->
+<!--IMAGE CONTENT AREA START -->
+<!--SELECTED WORK SM/MD-->
 <div class="container mt-4 mb-4">
-	<p class="text-center" id="selected-work">
+	<p class="text-center d-lg-none d-xl-none" id="selected-work">
 		SELECTED WORK
 	</p>
 </div>
-
+<!--SELECTED WORK LARGE+-->
+<div class="container row mt-5 mb-4">
+	<p class="col-2 text-center d-none d-lg-block d-xl-block" id="selected-work">
+		SELECTED WORK
+	</p>
+	<p class="offset-7 col-2 d-none d-lg-block d-xl-block">
+		THE LAST
+	</p>
+</div>
 <!--	WORKS BUT SUCKS-->
 	<!--FIRST IMAGE (IPAD)-->
 <!--	<div class="project-image d-block d-sm-none">-->
@@ -158,105 +191,208 @@ git st
 <!--END WORKS BUT SUCKS-->
 
 <!--	MEDIUM+ ONLY CONTENT START -->
-<!--container for image content area-->
-<div class="container d-none d-sm-block"> <!--container (margin) for all below -->
+<!--container for LARGE image content area-->
+<div class="container d-none d-lg-block d-xl-block row"> <!--CONTAINER FOR LARGE SCREENS CONTENT AREA -->
+	<div class="col-9 d-none d-sm-block"> <!--container (margin) for all below -->
+		<div class="row"> <!-- row container for first 2 images -->
+			<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/apple-ipad.jpg" alt="">
+			<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/macbook.jpg" alt="">
+		</div>
+		<div class="row"> <!--container for row text+pills-->
+			<!-- image -->
+	<!--		<div class="row"> &lt;!&ndash; content under image &ndash;&gt;-->
+				<div class="col-3 pl-4">
+					<p>FEATURED PROJECT</p>
+				</div>
+				<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
+					<div class="row">
+						<div class="mx-1">
+							<h6	id="design-button">D</h6>
+						</div>
+						<div class="mx-1">
+							<h6 id="develop-button">D</h6>
+						</div>
+						<div class="mx-1">
+							<h6	id="support-button">S</h6>
+						</div>
+						<div class="mx-1">
+							<h6	id="host-button">H</h6>
+						</div>
+					</div>
+				</div>
+	<!--		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded row m-2" src="assets/images/macbook.jpg" alt="">-->
+	<!--		<div class="row">-->
+				<div class="col-3 pl-4">
+					<p>FEATURED PROJECT</p>
+				</div>
+				<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
+					<div class="row">
+						<div class="mx-1">
+							<h6	id="design-button">D</h6>
+						</div>
+						<div class="mx-1">
+							<h6 id="develop-button">D</h6>
+						</div>
+						<div class="mx-1">
+							<h6	id="support-button">S</h6>
+						</div>
+						<div class="mx-1">
+							<h6	id="host-button">H</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="row">
+			<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/man.jpg" alt="">
+			<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/security.jpg" alt="">
+		</div>
+		<div class="row">
+	<!--		<div class="row">-->
+				<div class="col-3 pl-4">
+					<p>FEATURED PROJECT</p>
+				</div>
+				<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
+					<div class="row">
+						<div class="mx-1">
+							<h6	id="design-button">D</h6>
+						</div>
+						<div class="mx-1">
+							<h6 id="develop-button">D</h6>
+						</div>
+						<div class="mx-1">
+							<h6	id="support-button">S</h6>
+						</div>
+						<div class="mx-1">
+							<h6	id="host-button">H</h6>
+						</div>
+					</div>
+				</div>
+	<!--		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded row m-2" src="assets/images/security.jpg" alt="">-->
+	<!--		<div class="row">-->
+				<div class="col-3 pl-4">
+					<p>FEATURED PROJECT</p>
+				</div>
+				<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
+					<div class="row">
+						<div class="mx-1">
+							<h6	id="design-button">D</h6>
+						</div>
+						<div class="mx-1">
+							<h6 id="develop-button">D</h6>
+						</div>
+						<div class="mx-1">
+							<h6	id="support-button">S</h6>
+						</div>
+						<div class="mx-1">
+							<h6	id="host-button">H</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+<!--	LAST ARTICLES LARGE VIEW ONLY START-->
+	<div class="col-3 container row">
+		<h4 class="col-1">test</h4>
+	</div>
+</div>
+<!--IMAGE SECTION FOR MEDIUM VIEW START-->
+<div class="container d-none d-sm-block d-lg-none d-xl-none"> <!--container (margin) for all below -->
 	<div class="row"> <!-- row container for first 2 images -->
 		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/apple-ipad.jpg" alt="">
 		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/macbook.jpg" alt="">
 	</div>
 	<div class="row"> <!--container for row text+pills-->
 		<!-- image -->
-<!--		<div class="row"> &lt;!&ndash; content under image &ndash;&gt;-->
-			<div class="col-3 pl-4">
-				<p>FEATURED PROJECT</p>
-			</div>
-			<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
-				<div class="row">
-					<div class="mx-1">
-						<h6	id="design-button">D</h6>
-					</div>
-					<div class="mx-1">
-						<h6 id="develop-button">D</h6>
-					</div>
-					<div class="mx-1">
-						<h6	id="support-button">S</h6>
-					</div>
-					<div class="mx-1">
-						<h6	id="host-button">H</h6>
-					</div>
+		<!--		<div class="row"> &lt;!&ndash; content under image &ndash;&gt;-->
+		<div class="col-3 pl-4">
+			<p>FEATURED PROJECT</p>
+		</div>
+		<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
+			<div class="row">
+				<div class="mx-1">
+					<h6	id="design-button">D</h6>
 				</div>
-			</div>
-<!--		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded row m-2" src="assets/images/macbook.jpg" alt="">-->
-<!--		<div class="row">-->
-			<div class="col-3 pl-4">
-				<p>FEATURED PROJECT</p>
-			</div>
-			<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
-				<div class="row">
-					<div class="mx-1">
-						<h6	id="design-button">D</h6>
-					</div>
-					<div class="mx-1">
-						<h6 id="develop-button">D</h6>
-					</div>
-					<div class="mx-1">
-						<h6	id="support-button">S</h6>
-					</div>
-					<div class="mx-1">
-						<h6	id="host-button">H</h6>
-					</div>
+				<div class="mx-1">
+					<h6 id="develop-button">D</h6>
+				</div>
+				<div class="mx-1">
+					<h6	id="support-button">S</h6>
+				</div>
+				<div class="mx-1">
+					<h6	id="host-button">H</h6>
 				</div>
 			</div>
 		</div>
+		<!--		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded row m-2" src="assets/images/macbook.jpg" alt="">-->
+		<!--		<div class="row">-->
+		<div class="col-3 pl-4">
+			<p>FEATURED PROJECT</p>
+		</div>
+		<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
+			<div class="row">
+				<div class="mx-1">
+					<h6	id="design-button">D</h6>
+				</div>
+				<div class="mx-1">
+					<h6 id="develop-button">D</h6>
+				</div>
+				<div class="mx-1">
+					<h6	id="support-button">S</h6>
+				</div>
+				<div class="mx-1">
+					<h6	id="host-button">H</h6>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="row">
 		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/man.jpg" alt="">
 		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/security.jpg" alt="">
 	</div>
 	<div class="row">
-<!--		<div class="row">-->
-			<div class="col-3 pl-4">
-				<p>FEATURED PROJECT</p>
-			</div>
-			<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
-				<div class="row">
-					<div class="mx-1">
-						<h6	id="design-button">D</h6>
-					</div>
-					<div class="mx-1">
-						<h6 id="develop-button">D</h6>
-					</div>
-					<div class="mx-1">
-						<h6	id="support-button">S</h6>
-					</div>
-					<div class="mx-1">
-						<h6	id="host-button">H</h6>
-					</div>
+		<!--		<div class="row">-->
+		<div class="col-3 pl-4">
+			<p>FEATURED PROJECT</p>
+		</div>
+		<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
+			<div class="row">
+				<div class="mx-1">
+					<h6	id="design-button">D</h6>
 				</div>
-			</div>
-<!--		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded row m-2" src="assets/images/security.jpg" alt="">-->
-<!--		<div class="row">-->
-			<div class="col-3 pl-4">
-				<p>FEATURED PROJECT</p>
-			</div>
-			<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
-				<div class="row">
-					<div class="mx-1">
-						<h6	id="design-button">D</h6>
-					</div>
-					<div class="mx-1">
-						<h6 id="develop-button">D</h6>
-					</div>
-					<div class="mx-1">
-						<h6	id="support-button">S</h6>
-					</div>
-					<div class="mx-1">
-						<h6	id="host-button">H</h6>
-					</div>
+				<div class="mx-1">
+					<h6 id="develop-button">D</h6>
+				</div>
+				<div class="mx-1">
+					<h6	id="support-button">S</h6>
+				</div>
+				<div class="mx-1">
+					<h6	id="host-button">H</h6>
 				</div>
 			</div>
 		</div>
+		<!--		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded row m-2" src="assets/images/security.jpg" alt="">-->
+		<!--		<div class="row">-->
+		<div class="col-3 pl-4">
+			<p>FEATURED PROJECT</p>
+		</div>
+		<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
+			<div class="row">
+				<div class="mx-1">
+					<h6	id="design-button">D</h6>
+				</div>
+				<div class="mx-1">
+					<h6 id="develop-button">D</h6>
+				</div>
+				<div class="mx-1">
+					<h6	id="support-button">S</h6>
+				</div>
+				<div class="mx-1">
+					<h6	id="host-button">H</h6>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-
 <!--IMAGE SECTION FOR SMALL VIEW START-->
 <div class="container d-block d-sm-none">
 	<div class="row"> <!-- row container for first 2 images -->

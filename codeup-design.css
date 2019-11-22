@@ -76,6 +76,16 @@ p {
 	width: 105px;
 	margin: 25px auto;
 }
+#main-logo-lg {
+	border-radius: 50%;
+	position: relative;
+	bottom: 105px;
+	height: 105px;
+	width: 105px;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-left: 50px;
+}
 .logo-container {
 	background-color: white;
 	height: 50px;

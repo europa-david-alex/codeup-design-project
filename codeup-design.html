@@ -74,16 +74,32 @@
 	<h5 class="m-4" id="secondary-header">FROM PARK CITY, UTAH</h5>
 </div>
 <!--END MAIN HEADER-->
-<!--circles/pills works but ugly-->
-<div class="container text-center" id="circles-main">
+<!--circles/pills works but ugly SMALL-->
+<div class="container text-center d-block d-sm-none" id="circles-main">
 	<div class="row">
-		<div class="first-two-circles offset-1 col-4">
-			<h5	id="design-button">DESIGN</h5>
-			<h5 id="develop-button">DEVELOP</h5>
+		<div class=" first-two-circles offset-1 col-4 ">
+			<h5	id="design-button"><br>DESIGN</h5>
+			<h5 id="support-button"><br>SUPPORT</h5>
 		</div>
 		<div class="second-two-circles offset-1 col-4">
-			<h5	id="support-button">SUPPORT</h5>
-			<h5	id="host-button">HOST</h5>
+
+			<h5 id="develop-button"><br>DEVELOP</h5>
+			<h5	id="host-button"><br>HOST</h5>
+		</div>
+	</div>
+</div>
+
+<!--CIRCLES SHOW ONLY ON MEDIUM-->
+<div class="container text-center d-block d-sm-block" id="circles-main">
+	<div class="row">
+		<div class="mx-auto " id="medium-circles">
+			<h5 id="design-button"><br>DESIGN</h5>
+			<h5 id="develop-button"><br>DEVELOP</h5>
+<!--		</div>-->
+<!--		<div class="second-two-circles offset-1 col-4">-->
+
+			<h5	id="support-button"><br>SUPPORT</h5>
+			<h5	id="host-button"><br>HOST</h5>
 		</div>
 	</div>
 </div>
@@ -99,12 +115,12 @@
 <!--</div>-->
 <!--	CONTENT AREA-->
 <div class="container">
-<!--	HIDDEN ON SMALL SCREENS-->
-	<hr class="d-none d-sm-block">
 <!--	END HIDDEN ON SMALL SCREENS-->
+	<hr class="mx-5 d-none d-sm-block">
+<!--	HIDDEN ON SMALL SCREENS-->
 </div>
 <!--IMAGE CONTENT AREA START-->
-<div class="container mt-5">
+<div class="container mt-4 mb-4">
 	<p class="text-center" id="selected-work">
 		SELECTED WORK
 	</p>
@@ -112,7 +128,7 @@
 
 <!--	WORKS BUT SUCKS-->
 	<!--FIRST IMAGE (IPAD)-->
-<!--	<div class="project-image">-->
+<!--	<div class="project-image d-block d-sm-none">-->
 <!--		<img class="col-12 col-sm-6 p-2 rounded row" id="ipad-img" src="assets/images/apple-ipad.jpg" alt="">-->
 <!--	</div>-->
 <!--&lt;!&ndash;	<div class="row">&ndash;&gt;-->
@@ -136,14 +152,14 @@
 <!--				</div>-->
 <!--			</div>-->
 <!--		</div>-->
-<!--&lt;!&ndash;	</div>&ndash;&gt;-->
-<!--</div>-->
+<!--	</div>-->
+</div>
 <!--	END FIRST IMAGE-->
 <!--END WORKS BUT SUCKS-->
 
 <!--	MEDIUM+ ONLY CONTENT START -->
 <!--container for image content area-->
-<div class="container"> <!--container (margin) for all below -->
+<div class="container d-none d-sm-block"> <!--container (margin) for all below -->
 	<div class="row"> <!-- row container for first 2 images -->
 		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/apple-ipad.jpg" alt="">
 		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/macbook.jpg" alt="">
@@ -151,10 +167,10 @@
 	<div class="row"> <!--container for row text+pills-->
 		<!-- image -->
 <!--		<div class="row"> &lt;!&ndash; content under image &ndash;&gt;-->
-			<div class="col-3 p-0">
+			<div class="col-3 pl-4">
 				<p>FEATURED PROJECT</p>
 			</div>
-			<div class="col-3 p-0 text-center d-flex justify-content-end" id="tiny-circles">
+			<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
 				<div class="row">
 					<div class="mx-1">
 						<h6	id="design-button">D</h6>
@@ -172,10 +188,10 @@
 			</div>
 <!--		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded row m-2" src="assets/images/macbook.jpg" alt="">-->
 <!--		<div class="row">-->
-			<div class="col-3 p-0">
+			<div class="col-3 pl-4">
 				<p>FEATURED PROJECT</p>
 			</div>
-			<div class="col-3 p-0 text-center d-flex justify-content-end" id="tiny-circles">
+			<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
 				<div class="row">
 					<div class="mx-1">
 						<h6	id="design-button">D</h6>
@@ -198,10 +214,10 @@
 	</div>
 	<div class="row">
 <!--		<div class="row">-->
-			<div class="col-3 p-0">
+			<div class="col-3 pl-4">
 				<p>FEATURED PROJECT</p>
 			</div>
-			<div class="col-3 p-0 text-center d-flex justify-content-end" id="tiny-circles">
+			<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
 				<div class="row">
 					<div class="mx-1">
 						<h6	id="design-button">D</h6>
@@ -219,10 +235,10 @@
 			</div>
 <!--		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded row m-2" src="assets/images/security.jpg" alt="">-->
 <!--		<div class="row">-->
-			<div class="col-3 p-0">
+			<div class="col-3 pl-4">
 				<p>FEATURED PROJECT</p>
 			</div>
-			<div class="col-3 p-0 text-center d-flex justify-content-end" id="tiny-circles">
+			<div class="col-3 pr-5 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
 				<div class="row">
 					<div class="mx-1">
 						<h6	id="design-button">D</h6>
@@ -236,6 +252,36 @@
 					<div class="mx-1">
 						<h6	id="host-button">H</h6>
 					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+<!--IMAGE SECTION FOR SMALL VIEW START-->
+<div class="container d-block d-sm-none">
+	<div class="row"> <!-- row container for first 2 images -->
+		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/apple-ipad.jpg" alt="">
+<!--		<img class="mx-auto project-image col-12 col-sm-5 p-2 rounded" src="assets/images/macbook.jpg" alt="">-->
+	</div>
+	<div class="row"> <!--container for row text+pills-->
+		<!-- image -->
+		<!--		<div class="row"> &lt;!&ndash; content under image &ndash;&gt;-->
+		<div class="col-6 p-0 mt-1">
+			<p>FEATURED PROJECT</p>
+		</div>
+		<div class="col-6 pr-3 mt-1 text-center d-flex justify-content-end" id="tiny-circles">
+			<div class="row">
+				<div class="mx-1">
+					<h6	id="design-button">D</h6>
+				</div>
+				<div class="mx-1">
+					<h6 id="develop-button">D</h6>
+				</div>
+				<div class="mx-1">
+					<h6	id="support-button">S</h6>
+				</div>
+				<div class="mx-1">
+					<h6	id="host-button">H</h6>
 				</div>
 			</div>
 		</div>

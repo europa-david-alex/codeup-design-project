@@ -21,7 +21,9 @@ text-align: center;
 	height: 105px;
 	border: 7px solid white;
 	border-radius: 50%;
-	padding: 40% 0;
+	position: relative;
+
+	/*padding: 40% 0;*/
 	/*vertical-align: middle;*/
 	font-family: 'anton', sans-serif;
 	/*display: table;*/
@@ -49,7 +51,7 @@ p {
 
 
 #tiny-circles h6 {
-	position: relative;
+	/*position: relative;*/
 	bottom: 10px;
 	width: 18px;
 	height: 18px;
@@ -82,4 +84,10 @@ p {
 }
 .image-container {
 	margin: auto;
+}
+/*br	{*/
+/*	line-height: 150%;*/
+/*}*/
+#medium-circles h5 {
+	display: inline-block;
 }

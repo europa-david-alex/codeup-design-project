@@ -40,7 +40,7 @@ text-align: center;
 	background-color: #00ABA9;
 }
 
-#ipad-img {
+.project-image {
 	background-color: #e6e6e6;
 }
 p {
@@ -49,6 +49,8 @@ p {
 
 
 #tiny-circles h6 {
+	position: relative;
+	bottom: 10px;
 	width: 18px;
 	height: 18px;
 	font-size: 50%;
@@ -77,4 +79,7 @@ p {
 	height: 50px;
 	margin-top: 50px;
 	margin-bottom: 50px;
+}
+.image-container {
+	margin: auto;
 }
